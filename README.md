@@ -9,7 +9,7 @@ elementelor listei este de tip întreg.
 valorilor impare și pare. Valorile pare sunt inserate în prima jumătate la începutul liste iar cele impare
 în a doua jumătate la sfârșitul listei. Informația utilă a elementelor listei este de tip întreg.
 - [x] b) O funcție care să determine numărul de elemente pare și impare din listă.
-- [ ] a) O funcție pentru inserarea unei date într-o listă liniară dublu înlănțuită după ultima apariție a unei valori
+- [x] a) O funcție pentru inserarea unei date într-o listă liniară dublu înlănțuită după ultima apariție a unei valori
 y primită ca parametru (dacă y nu există inserarea se realizează la sfârșit). Informația utilă a elementelor
 listei este de tip întreg.
 - [ ] b) O funcție care să determine ponderea unei valori primită ca parametru în cadrul listei.

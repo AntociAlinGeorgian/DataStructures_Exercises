@@ -43,9 +43,10 @@ void printList(Node* lst) {
 	if (lst) {
 		Node* tmp = lst;
 		while (tmp != NULL) {
-			printf("%d \n", tmp->info);
+			printf(" %d ", tmp->info);
 			tmp = tmp->next;
 		}
+		printf("\n");
 	}
 }
 
@@ -54,9 +55,31 @@ void readFromFile(Node*& lst) {
 	FILE* f = fopen("Text.txt", "r");
 	if (f) {
 		while (!feof(f)) {
-			Node* n = createNode(fscanf(f, "%d"));
+			int nr;
+			fscanf(f, "%d", &nr);
+			Node* n = createNode(nr);
 			insertNode(lst, n);
 		}
+	}
+}
+
+void countEvenOdd(Node* lst) {
+	if (lst) {
+		int odd = 0;
+		int even = 0;
+		Node* tmp = lst;
+
+		while (tmp != NULL) {
+			if (tmp->info % 2 == 0) {
+				even++;
+			}
+			else if (tmp->info % 2 == 1) {
+				odd++;
+			}
+			tmp = tmp->next;
+		}
+		printf("Even nr: %d \n", even);
+		printf("Odd nr: %d \n", odd);
 	}
 }
 
@@ -64,4 +87,5 @@ void main() {
 	Node* lst = nullptr;
 	readFromFile(lst);
 	printList(lst);
+	countEvenOdd(lst);
 }

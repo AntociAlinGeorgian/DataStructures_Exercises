@@ -48,6 +48,23 @@ void parcurgere(Node* lst) {
 	printf("%d \n", tmp->info);
 }
 
+void countNr(Node* lst, int nr) {
+	if (lst == NULL) {
+		printf("Lista NULL.");
+	}
+	else {
+		int count = 0;
+		while (lst->next != NULL && lst->info < nr) {
+			count++;
+			lst = lst->next;
+		}
+		if (lst->info < nr) {
+			count++;
+		}
+		
+		printf("Exista %d numere mai mici decat %d in lista. \n",count,nr);
+	}
+}
 
 void main() {
 
@@ -80,4 +97,6 @@ void main() {
 	
 
 	parcurgere(lst);
+
+	countNr(lst,6);
 }

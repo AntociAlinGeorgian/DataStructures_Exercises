@@ -16,7 +16,7 @@ y primită ca parametru (dacă y nu există inserarea se realizează la sfârși
 listei este de tip întreg.
 - [x] b) O funcție care să determine ponderea unei valori primită ca parametru în cadrul listei.
 ###### Ex. 4:
-- [ ] a) O funcție pentru inserarea unei date într-o listă liniară dublu înlănțuită astfel încât lista să rămână
+- [x] a) O funcție pentru inserarea unei date într-o listă liniară dublu înlănțuită astfel încât lista să rămână
 sortată crescător. Informația utilă a elementelor listei este de tip întreg.
 - [ ] b) O funcție recursivă care să determine numărul de elemente mai mici decât o valoare primită ca
 parametru.

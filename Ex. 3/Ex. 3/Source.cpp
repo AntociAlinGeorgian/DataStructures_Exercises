@@ -28,11 +28,12 @@ void insertNode(Node*& lst, Node* nod, int val) {
 	else {
 		int exist = 0;
 		Node* tmp = lst;
-		while (lst->next != NULL) {
-			if (lst->info == val) {
+		Node* tmp1 = lst;
+		while (tmp1->next != NULL) {
+			if (tmp1->info == val) {
 				exist = 1;
 			}
-			lst = lst->next;
+			tmp1 = tmp1->next;
 		}
 		if (exist == 0) {
 			while (tmp->next != NULL) {
@@ -42,13 +43,13 @@ void insertNode(Node*& lst, Node* nod, int val) {
 			nod->prev = tmp;
 		}
 		else {
-			while (lst->prev != NULL && lst->info != val) {
-				lst = lst->prev;
+			while (tmp->next != NULL && tmp->info != val) {
+				tmp = tmp->prev;
 			}
-			nod->next = lst->next;
-			nod->prev = lst;
-			lst->next->prev = nod;
-			lst->next = nod;
+			nod->next = tmp->next;
+			nod->prev = tmp;
+			tmp->next->prev = nod;
+			tmp->next = nod;
 		}
 	}
 }
@@ -62,7 +63,33 @@ void printList(Node* lst) {
 		}
 		printf("%d ", tmp->info);
 	}
+	else {
+		printf("NULL list.");
+	}
 }
+
+void weight(Node* lst, int val) {
+	if (lst) {
+		int countNr = 0;
+		int countElements = 0;
+		float weight;
+		while (lst->next != NULL) {
+			if (lst->info == val) {
+				countNr++;
+			}
+			countElements++;
+			lst = lst->next;
+		}
+		countElements = countElements + 1;
+		weight = (countNr * 100 )/ countElements;
+		printf("Ponderea nr. %d este de %5.0f procente.\n", val, weight);
+	}
+	else {
+		printf("NULL list.");
+	}
+}
+
+
 void main() {
 	Node* lst = nullptr;
 	int nr;
@@ -84,4 +111,5 @@ void main() {
 	}
 
 	printList(lst);
+	weight(lst, 1);
 }

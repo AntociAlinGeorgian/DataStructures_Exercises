@@ -18,7 +18,7 @@ listei este de tip întreg.
 ###### Ex. 4:
 - [x] a) O funcție pentru inserarea unei date într-o listă liniară dublu înlănțuită astfel încât lista să rămână
 sortată crescător. Informația utilă a elementelor listei este de tip întreg.
-- [ ] b) O funcție recursivă care să determine numărul de elemente mai mici decât o valoare primită ca
+- [x] b) O funcție recursivă care să determine numărul de elemente mai mici decât o valoare primită ca
 parametru.
 ###### Ex. 5:
 - [ ] a) O funcție pentru inserarea unei date într-o listă liniară simplu înlănțuită astfel încât lista să rămână

@@ -25,7 +25,7 @@ parametru.
 sortată descrescător. Informația utilă a elementelor listei este de tip întreg.
 - [x] b) O funcție care să determine numărul de elemente din intervalul [x,y] divizibile cu k.
 ###### Ex. 6:
-- [ ] a) O funcție pentru inserarea unei date într-o listă liniară simplu înlănțuită între primele două noduri din
+- [x] a) O funcție pentru inserarea unei date într-o listă liniară simplu înlănțuită între primele două noduri din
 cadrul listei (dacă acestea nu există se va insera la sfârșit). Informația utilă a elementelor listei este de
 tip întreg.
 - [ ] b) O funcție care să determine dacă o valoare primită ca parametru se regăsește în listă în mai mult de

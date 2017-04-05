@@ -50,6 +50,35 @@ void parcurgere(Nod* lst) {
 	}
 }
 
+void check(Nod* lst, int nr) {
+	if (lst == NULL) {
+		printf("lst null.");
+	}
+	else {
+		float count_nr = 0;
+		float count_items = 0;
+		while (lst->next != NULL) {
+			if (lst->info == nr) {
+				count_nr++;
+			}
+			count_items++;
+			lst = lst->next;
+		}
+		if (lst->info == nr) {
+			count_nr++;
+		}
+		count_items++;
+		float rez = count_nr / count_items;
+
+		if (rez >= 0.3) {
+			printf("Numarul [%d] se gaseste in mai mult de 30 procente din noduri.\n",nr);
+		}
+		else {
+			printf("Numarul [%d] se gaseste in mai putin de 30 procente din noduri, sau deloc.\n", nr);
+		}
+	}
+}
+
 void main() {
 	Nod* lst = nullptr;
 	Nod* n = createNode(1);
@@ -58,11 +87,13 @@ void main() {
 	n = createNode(2);
 	insertNode(lst, n);
 
-	n = createNode(3);
+	n = createNode(2);
 	insertNode(lst, n);
 
 	n = createNode(4);
 	insertNode(lst, n);
 
 	parcurgere(lst);
+
+	check(lst, 2);
 }

@@ -28,7 +28,7 @@ sortată descrescător. Informația utilă a elementelor listei este de tip înt
 - [x] a) O funcție pentru inserarea unei date într-o listă liniară simplu înlănțuită între primele două noduri din
 cadrul listei (dacă acestea nu există se va insera la sfârșit). Informația utilă a elementelor listei este de
 tip întreg.
-- [ ] b) O funcție care să determine dacă o valoare primită ca parametru se regăsește în listă în mai mult de
+- [x] b) O funcție care să determine dacă o valoare primită ca parametru se regăsește în listă în mai mult de
 30% din noduri.
 ###### Ex. 7:
 - [ ] a) O funcție pentru inserarea unei date într-o listă liniară simplu înlănțuită după primele n elemente a

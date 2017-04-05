@@ -23,7 +23,7 @@ parametru.
 ###### Ex. 5:
 - [x] a) O funcție pentru inserarea unei date într-o listă liniară simplu înlănțuită astfel încât lista să rămână
 sortată descrescător. Informația utilă a elementelor listei este de tip întreg.
-- [ ] b) O funcție care să determine numărul de elemente din intervalul [x,y] divizibile cu k.
+- [x] b) O funcție care să determine numărul de elemente din intervalul [x,y] divizibile cu k.
 ###### Ex. 6:
 - [ ] a) O funcție pentru inserarea unei date într-o listă liniară simplu înlănțuită între primele două noduri din
 cadrul listei (dacă acestea nu există se va insera la sfârșit). Informația utilă a elementelor listei este de

@@ -50,6 +50,26 @@ void parcurgere(Nod* lst) {
 	}
 }
 
+void checkNr(Nod* lst, int nr) {
+	if (lst == NULL) {
+		printf("lst null.");
+	}
+	else {
+		int count = 0;
+		while (lst->next != NULL) {
+			if (lst->info < nr) {
+				count++;
+			}
+			lst = lst->next;
+		}
+		if (lst->info < nr) {
+			count++;
+		}
+
+		printf("Exista %d numere mai mici decat %d.\n", count, nr);
+	}
+}
+
 void main(){
 	Nod* lst = nullptr;
 	Nod* n = createNode(1);
@@ -69,4 +89,6 @@ void main(){
 
 
 	parcurgere(lst);
+
+	checkNr(lst, 5);
 }

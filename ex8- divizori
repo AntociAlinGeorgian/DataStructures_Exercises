@@ -1,0 +1,9 @@
+int functie_divizori(Nod* lst, int max)
+{
+  if(lst == null)
+    return 0;
+   else{
+    if(lst->info%max == 0) return functie_divizori(lst->next,max) + 1;
+    else return functie_divizori(lst->next,max);
+   }
+}
